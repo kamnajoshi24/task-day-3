@@ -5,7 +5,7 @@ const axios = require('axios');
 function makeGetRequest(path) {
     axios.get(path).then(
         (response) => {
-            var result = data
+            var result = response.data;
             console.log(result);
         },
         (error) => {
